@@ -42,7 +42,7 @@ export function CareersSection() {
             Join our team
           </h1>
           <p className="mt-6 text-lg text-muted-foreground max-w-2xl mx-auto">
-            {"We're a small but passionate team building tools that help countless of people every day."}
+            {"We're a small but passionate team building tools that help countless people every day."}
           </p>
         </motion.div>
 

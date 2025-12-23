@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import { motion } from "framer-motion"
-import { Twitter, Linkedin, Github, Facebook, Instagram } from "lucide-react"
+import { Twitter, Linkedin, Github, Facebook } from "lucide-react"
 import { products, socialLinks } from "@/lib/data"
 
 function DiscordIcon({ className }: { className?: string }) {
@@ -60,15 +60,7 @@ export function Footer() {
               >
                 <Facebook className="w-4 h-4" />
               </motion.a>
-              <motion.a
-                href={socialLinks.instagram}
-                target="_blank"
-                rel="noopener noreferrer"
-                whileHover={{ scale: 1.1 }}
-                className="p-2 bg-muted rounded-full hover:bg-muted-foreground/20 transition-colors text-muted-foreground hover:text-foreground"
-              >
-                <Instagram className="w-4 h-4" />
-              </motion.a>
+
               <motion.a
                 href={socialLinks.github}
                 target="_blank"

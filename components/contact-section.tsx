@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Mail, Phone, MessageCircle, Twitter, Linkedin, Github, Clock, Zap, Heart, Facebook, Instagram } from "lucide-react"
+import { Mail, Phone, MessageCircle, Twitter, Linkedin, Github, Clock, Zap, Heart, Facebook } from "lucide-react"
 import { contactInfo, socialLinks } from "@/lib/data"
 
 const supportChannels = [
@@ -157,15 +157,7 @@ export function ContactSection() {
                 >
                   <Facebook className="w-5 h-5" />
                 </motion.a>
-                <motion.a
-                  href={socialLinks.instagram}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  whileHover={{ scale: 1.1 }}
-                  className="w-12 h-12 flex items-center justify-center bg-muted rounded-full hover:bg-accent hover:text-accent-foreground transition-colors"
-                >
-                  <Instagram className="w-5 h-5" />
-                </motion.a>
+
                 <motion.a
                   href={socialLinks.github}
                   target="_blank"

@@ -4,7 +4,7 @@ export const products = [
     name: "PippaQuiz",
     description: "An AI tool to generate exam questions based on any given prompt. Helping teachers become more efficient by focusing on what really matters.",
     category: "Education",
-    status: "upcoming" as const,
+    status: "active" as const,
     url: "https://pippaquiz.com",
     icon: "Brain",
   },
@@ -72,10 +72,9 @@ export const team = [
 
 export const socialLinks = {
   twitter: "https://twitter.com/deadmanstech",
-  facebook: "https://facebook.com/deadmanstech",
+  facebook: "https://facebook.com/deadmanstechfb",
   github: "https://github.com/deadmanstech",
   discord: "https://discord.gg/MmGcWmDHrj",
-  instagram: "https://instagram.com/deadmanstech",
 }
 
 export const contactInfo = {

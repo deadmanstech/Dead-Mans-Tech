@@ -4,7 +4,16 @@ const nextConfig = {
     ignoreBuildErrors: true,
   },
   images: {
-    unoptimized: true,
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: '**', // This allows any HTTPS domain
+      },
+      {
+        protocol: 'http',
+        hostname: '**', // This allows any HTTP domain
+      },
+    ],
   },
 }
 

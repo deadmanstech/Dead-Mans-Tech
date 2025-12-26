@@ -73,7 +73,7 @@ export default async function BlogPostPage({ params }: PageProps) {
           </div>
 
           <div className="relative aspect-[16/9] rounded-2xl overflow-hidden mb-12">
-            <Image src={post.image || "/placeholder.svg"} alt={post.title} fill className="object-cover" priority />
+            <Image src={post.image || "/placeholder.svg"} alt={post.title} fill className="object-cover" priority unoptimized={true} />
           </div>
 
           <MarkdownRenderer content={post.content || ""} />

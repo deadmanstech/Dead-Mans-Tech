@@ -6,14 +6,10 @@ import { FeaturesSection } from "@/components/features-section"
 import { StatsSection } from "@/components/stats-section"
 import { TestimonialsSection } from "@/components/testimonials-section"
 import { MissionSection } from "@/components/mission-section"
-import { BlogSection } from "@/components/blog-section"
 import { CTASection } from "@/components/cta-section"
 import { Footer } from "@/components/footer"
-import { getPublishedPosts } from "@/lib/blog-db"
 
 export default async function HomePage() {
-  const allPosts = await getPublishedPosts()
-  const latestPosts = allPosts.slice(0, 6) // Show up to 6 latest posts
 
   return (
     <main className="bg-background">
@@ -42,7 +38,6 @@ export default async function HomePage() {
       {/* <StatsSection /> */}
       {/* <TestimonialsSection /> */}
       <MissionSection />
-      <BlogSection posts={latestPosts} />
       <CTASection />
       <Footer />
     </main>

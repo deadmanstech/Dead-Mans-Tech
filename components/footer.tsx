@@ -17,7 +17,7 @@ const footerLinks = {
   products: products.slice(0, 4).map((p) => ({ name: p.name, href: p.url })),
   company: [
     { name: "About Us", href: "/about" },
-    { name: "Blog", href: "/blog" },
+    { name: "Blog", href: "https://deadmanstech.substack.com/" },
     { name: "Careers", href: "/careers" },
     { name: "Contact", href: "/contact" },
   ],

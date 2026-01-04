@@ -79,6 +79,7 @@ export function Navigation() {
                         <div className="flex-1">
                           <div className="flex items-center gap-2">
                             <span className="font-medium text-sm text-foreground">{product.name}</span>
+                            {/* @ts-ignore */}
                             {product.status === "upcoming" && (
                               <span className="px-2 py-0.5 text-xs bg-accent/10 text-accent rounded-full border border-accent/20">
                                 Soon
@@ -111,10 +112,17 @@ export function Navigation() {
             About
           </Link>
           <Link
-            href="/blog"
+            href="https://deadmanstech.substack.com/"
+            target="_blank"
             className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
           >
             Blog
+          </Link>
+          <Link
+            href="/contact"
+            className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+          >
+            Contact
           </Link>
         </div>
 
@@ -155,6 +163,7 @@ export function Navigation() {
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
                     {product.name}
+                    {/* @ts-ignore */}
                     {product.status === "upcoming" && (
                       <span className="px-2 py-0.5 text-xs bg-accent/10 text-accent rounded-full">Soon</span>
                     )}
@@ -178,7 +187,8 @@ export function Navigation() {
                   About
                 </Link>
                 <Link
-                  href="/blog"
+                  href="https://deadmanstech.substack.com/"
+                  target="_blank"
                   className="block py-2 text-sm text-foreground"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >

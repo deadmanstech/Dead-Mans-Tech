@@ -62,7 +62,7 @@ export const team = [
   },
   {
     name: "Muhammad Abuzor",
-    roles: ["Co-Founder", "COO", "CPO"],
+    roles: ["Co-Founder", "COO"],
     image: "/abuzor.jpg",
     bio: "Engineer at heart, focused on building delightful experiences.",
     website: "https://abuzor.xyz",
